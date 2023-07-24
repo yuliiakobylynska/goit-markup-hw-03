@@ -74,8 +74,6 @@ ol {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-left: 24px;
 }
 .header-menu-item {
   padding: 24px 0;
@@ -163,7 +161,7 @@ ol {
   overflow: hidden;
 }
 .section-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
 }
 .section-service-title {
   color: var(--navy-blue, #2e2f42);
