@@ -65,7 +65,7 @@ ol {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
 }
 .header-menu-link {
   color: var(--navy-blue, #2e2f42);
@@ -75,6 +75,9 @@ ol {
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-left: 24px;
+}
+.header-menu-item {
+  padding: 24px 0;
 }
 .header-menu-link:hover,
 .header-menu-link:active,
@@ -96,8 +99,7 @@ ol {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   outline: 2px solid red;
 }
 .service {
@@ -109,7 +111,7 @@ ol {
 }
 
 .section {
-  padding-bottom: 120px;
+  padding-bottom: 120px 0;
 }
 .section-service-wrap {
   color: var(--white, #fff);
@@ -159,10 +161,9 @@ ol {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  margin-bottom: 8px;
 }
 .section-item {
-  width: calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 .section-service-title {
   color: var(--navy-blue, #2e2f42);
@@ -170,7 +171,7 @@ ol {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .section-list {
   display: flex;
@@ -205,11 +206,10 @@ ol {
   align-content: center;
 }
 .section-picture-item {
-  width: calc((100% - 2 * 24px) / 3);
+  width: calc((100% - 48px) / 3);
 }
-.container-team {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.team {
+  padding: 120px 0;
   background-color: var(--cloud, #f4f4fd);
 }
 .section-title-team {
@@ -230,20 +230,20 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-.team-item-list {
-  background-color: var(--white, #ffffff);
-  width: calc (100% - 3 * 24px)/4;
+.team-list-list {
   display: flex;
   gap: 24px;
 }
-.section-images-team {
-  width: calc((100% - 3 * 24px) / 4);
+.team-item-list {
+  background-color: var(--white, #ffffff);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+}
+.section-images-team {
   display: block;
 }
 .container-team-title {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 .team-title-title {
   text-align: center;
@@ -349,9 +349,9 @@ ol {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  width: calc((100% - 48px) / 3);
 }
 .section-info-item {
+  width: calc((100% - 48px) / 3);
 }
 .container-info {
   padding: 32px 16px;
