@@ -49,6 +49,8 @@ ol {
 .header-menu-list {
   display: flex;
   gap: 40px;
+}
+.header-menu-link {
   padding: 24px 0;
 }
 .address {
@@ -160,9 +162,6 @@ ol {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.section-item {
-  width: calc((100% - 3 * 24px) / 4);
-}
 .section-service-title {
   color: var(--navy-blue, #2e2f42);
   font-size: 20px;
@@ -170,6 +169,7 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  width: calc((100% - 3 * 24px) / 4);
 }
 .section-list {
   display: flex;
