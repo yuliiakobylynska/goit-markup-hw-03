@@ -199,8 +199,6 @@ ol {
   padding: 0 auto;
 }
 .section-picture-list {
-  padding-left: 156px;
-  padding-right: 156px;
   display: flex;
   gap: 24px;
   align-content: center;
