@@ -29,6 +29,7 @@ h6 {
 }
 ul,
 ol {
+  padding: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -92,10 +93,12 @@ ol {
 .address-link:focus {
   color: var(--ocean, #404bbf);
 }
+.address {
+  margin-left: auto;
+}
 .address-list {
   display: flex;
   gap: 40px;
-  margin-left: 156px;
 }
 .container {
   width: 1158px;
@@ -120,6 +123,8 @@ ol {
   line-height: 1.07;
   letter-spacing: 0.02em;
   max-width: 496px;
+  padding-bottom: 48px;
+  margin: 0 auto;
 }
 .btn-section-service {
   cursor: pointer;
@@ -131,23 +136,17 @@ ol {
   letter-spacing: 0.04em;
   background-color: var(--iris, #4d5ae5);
   padding: 16px 32px;
-  margin-top: 48px;
-  margin-bottom: 188px;
   display: block;
   min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin: 0 auto;
 }
 .btn-section-service:hover,
 .btn-section-service:active,
 .btn-section-service:focus {
   background-color: var(--ocean, #404bbf);
-}
-.container-solutions {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  display: flex;
 }
 .visually-hidden {
   position: absolute;
@@ -169,12 +168,14 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  width: calc((100% - 3 * 24px) / 4);
 }
 .section-list {
   display: flex;
   gap: 24px;
   align-items: center;
+}
+.section-item {
+  width: calc((100% - 72px) / 4);
 }
 .section-text {
   color: var(--slate, #434455);
@@ -190,11 +191,12 @@ ol {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  width: 323px;
+  /* max-width: 323px; */
   margin-bottom: 72px;
 }
 .section-picture {
   padding-bottom: 120px;
+  padding: 0 auto;
 }
 .section-picture-list {
   padding-left: 156px;
@@ -211,7 +213,6 @@ ol {
   background-color: var(--cloud, #f4f4fd);
 }
 .section-title-team {
-  max-width: 162px;
   text-align: center;
   color: var(--grey, #2e2f42);
   font-size: 36px;
@@ -289,6 +290,7 @@ ol {
 }
 .footer-text-text {
   max-width: 264px;
+  color: var(--cloud, #f4f4fd);
 }
 .btn-info {
   font-family: "Roboto", sans-serif;
@@ -350,7 +352,6 @@ ol {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  
 }
 .section-info-item {
   width: calc((100% - 48px) / 3);
@@ -358,4 +359,6 @@ ol {
 
 .img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
