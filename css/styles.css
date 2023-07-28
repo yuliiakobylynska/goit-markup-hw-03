@@ -206,7 +206,7 @@ ol {
   align-content: center;
 }
 .section-picture-item {
-  flex-basis: calc((100% - 48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .team {
   padding: 120px 0;
